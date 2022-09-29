@@ -37,6 +37,7 @@ public class FileHandler implements IFileHandler {
       totalResults.forEach((k, v) -> System.out.println(k + " : " + v));
 
     } catch (IOException e) {
+      System.out.println(e.getMessage());
       e.printStackTrace();
     }
   }

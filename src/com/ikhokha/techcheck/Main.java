@@ -8,6 +8,7 @@ public class Main {
       FileHandler fh = new FileHandler();
       fh.FetchAndProcessCommentFiles();
     } catch (FileNotFoundException e) {
+      System.out.println(e.getMessage());
       e.printStackTrace();
     }
   }
